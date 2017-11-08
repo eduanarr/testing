@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ITVDEVKR/remote Database</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+  <!-- Code Mirror -->
+  <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+  <!-- Fonts -->
+  <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+  <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+  <!-- Salvattore -->
+  <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+  <!-- SchemaSpy -->
+  <link rel="stylesheet" href="schemaSpy.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="bower/html5shiv/html5shiv.min.js"></script>
+  <script src="bower/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><b>ITVDEVKR/remote</b> Database</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>            
+			<!--<li><a href="components.html" title="List of system components">Components</a></li>-->
+			<li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+			<li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+			<li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+			<li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>				
+			<li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Main content -->
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+          <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>Utility Tables</h1>
+      </section>
+      <!-- Main content -->
+      <section class="content">
+		<div class="box box-primary">
+			<div class="box-header with-border">
+              <i class="fa fa-code-fork"></i>
+              <h3 class="box-title">Orphan Tables</h3>
+            </div>			
+            <div class="box-body">
+			<div id="grid" data-columns>
+				<div class="item">
+					<img src='diagrams/orphans/itv_mail_asgn.1degree.png' usemap='#itv_mail_asgn' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_demo_ctrl.1degree.png' usemap='#itv_demo_ctrl' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_mail_mger.1degree.png' usemap='#itv_mail_mger' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_role_sare.1degree.png' usemap='#itv_role_sare' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_znno.1degree.png' usemap='#itv_znno' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/ldw_link_camp.1degree.png' usemap='#ldw_link_camp' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_buyr_mail_addr.1degree.png' usemap='#itv_buyr_mail_addr' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_eddi_addr.1degree.png' usemap='#itv_eddi_addr' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_spib.1degree.png' usemap='#itv_spib' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/ldw_chic_prgt.1degree.png' usemap='#ldw_chic_prgt' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_demo.1degree.png' usemap='#itv_demo' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_univ_cptm.1degree.png' usemap='#itv_univ_cptm' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/ldw_chic_scch.1degree.png' usemap='#ldw_chic_scch' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/ldw_link_group.1degree.png' usemap='#ldw_link_group' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/ldw_chic_brek.1degree.png' usemap='#ldw_chic_brek' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_eddi_camp.1degree.png' usemap='#itv_eddi_camp' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_univ_cpts.1degree.png' usemap='#itv_univ_cpts' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_camp_univ.1degree.png' usemap='#itv_camp_univ' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_eddi_requ.1degree.png' usemap='#itv_eddi_requ' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_eddi_spot.1degree.png' usemap='#itv_eddi_spot' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+				<div class="item">
+					<img src='diagrams/orphans/itv_sare.1degree.png' usemap='#itv_sare' style="max-width:100%;" border='0' alt='' align='top'></img>
+				</div>
+			</div>
+			<map id="itv_mail_asgn" name="itv_mail_asgn">
+<area shape="rect" id="node1" href="tables/itv_mail_asgn.html" title="itv_mail_asgn" alt="" coords="5,5,191,128">
+</map>
+<map id="itv_demo_ctrl" name="itv_demo_ctrl">
+<area shape="rect" id="node1" href="tables/itv_demo_ctrl.html" title="itv_demo_ctrl" alt="" coords="5,5,159,157">
+</map>
+<map id="itv_mail_mger" name="itv_mail_mger">
+<area shape="rect" id="node1" href="tables/itv_mail_mger.html" title="itv_mail_mger" alt="" coords="5,5,161,157">
+</map>
+<map id="itv_role_sare" name="itv_role_sare">
+<area shape="rect" id="node1" href="tables/itv_role_sare.html" title="itv_role_sare" alt="" coords="5,5,153,157">
+</map>
+<map id="itv_znno" name="itv_znno">
+<area shape="rect" id="node1" href="tables/itv_znno.html" title="itv_znno" alt="" coords="5,5,169,157">
+</map>
+<map id="ldw_link_camp" name="ldw_link_camp">
+<area shape="rect" id="node1" href="tables/ldw_link_camp.html" title="ldw_link_camp" alt="" coords="5,5,175,157">
+</map>
+<map id="itv_buyr_mail_addr" name="itv_buyr_mail_addr">
+<area shape="rect" id="node1" href="tables/itv_buyr_mail_addr.html" title="itv_buyr_mail_addr" alt="" coords="5,5,201,216">
+</map>
+<map id="itv_eddi_addr" name="itv_eddi_addr">
+<area shape="rect" id="node1" href="tables/itv_eddi_addr.html" title="itv_eddi_addr" alt="" coords="5,5,159,245">
+</map>
+<map id="itv_spib" name="itv_spib">
+<area shape="rect" id="node1" href="tables/itv_spib.html" title="itv_spib" alt="" coords="5,5,195,245">
+</map>
+<map id="ldw_chic_prgt" name="ldw_chic_prgt">
+<area shape="rect" id="node1" href="tables/ldw_chic_prgt.html" title="ldw_chic_prgt" alt="" coords="5,5,211,245">
+</map>
+<map id="itv_demo" name="itv_demo">
+<area shape="rect" id="node1" href="tables/itv_demo.html" title="itv_demo" alt="" coords="5,5,201,275">
+</map>
+<map id="itv_univ_cptm" name="itv_univ_cptm">
+<area shape="rect" id="node1" href="tables/itv_univ_cptm.html" title="itv_univ_cptm" alt="" coords="5,5,183,275">
+</map>
+<map id="ldw_chic_scch" name="ldw_chic_scch">
+<area shape="rect" id="node1" href="tables/ldw_chic_scch.html" title="ldw_chic_scch" alt="" coords="5,5,201,304">
+</map>
+<map id="ldw_link_group" name="ldw_link_group">
+<area shape="rect" id="node1" href="tables/ldw_link_group.html" title="ldw_link_group" alt="" coords="5,5,172,304">
+</map>
+<map id="ldw_chic_brek" name="ldw_chic_brek">
+<area shape="rect" id="node1" href="tables/ldw_chic_brek.html" title="ldw_chic_brek" alt="" coords="5,5,185,363">
+</map>
+<map id="itv_eddi_camp" name="itv_eddi_camp">
+<area shape="rect" id="node1" href="tables/itv_eddi_camp.html" title="itv_eddi_camp" alt="" coords="5,5,189,392">
+</map>
+<map id="itv_univ_cpts" name="itv_univ_cpts">
+<area shape="rect" id="node1" href="tables/itv_univ_cpts.html" title="itv_univ_cpts" alt="" coords="5,5,176,392">
+</map>
+<map id="itv_camp_univ" name="itv_camp_univ">
+<area shape="rect" id="node1" href="tables/itv_camp_univ.html" title="itv_camp_univ" alt="" coords="5,5,212,451">
+</map>
+<map id="itv_eddi_requ" name="itv_eddi_requ">
+<area shape="rect" id="node1" href="tables/itv_eddi_requ.html" title="itv_eddi_requ" alt="" coords="5,5,196,509">
+</map>
+<map id="itv_eddi_spot" name="itv_eddi_spot">
+<area shape="rect" id="node1" href="tables/itv_eddi_spot.html" title="itv_eddi_spot" alt="" coords="5,5,225,685">
+</map>
+<map id="itv_sare" name="itv_sare">
+<area shape="rect" id="node1" href="tables/itv_sare.html" title="itv_sare" alt="" coords="5,5,219,1331">
+</map>
+
+			</div>
+		</div>			
+      </section>    
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div>
+      <div class="pull-right hidden-xs">
+        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      </div>
+      <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.0.0-rc2</a></strong>
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+<script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+<script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+<!-- Salvattore -->
+<script src="bower/salvattore/salvattore.min.js"></script>
+<!-- AnchorJS -->
+<script src="bower/anchor-js/anchor.min.js"></script>
+<!-- CodeMirror -->
+<script src="bower/codemirror/codemirror.js"></script>
+<script src="bower/codemirror/sql.js"></script>
+<!-- AdminLTE App -->
+<script src="bower/admin-lte/dist/js/app.min.js"></script>
+<script src=""></script>
+<script src="schemaSpy.js"></script>
+</body>
+</html>

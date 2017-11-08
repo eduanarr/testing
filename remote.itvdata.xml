@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="ITVDEVKR/remote" schema="itvdata" type="INGRES - II 10.2.0 (a64.sol/100)">
+   <tables>
+      <table name="itv_buyr_mail_addr" numRows="3519" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="sgrp_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="buyr_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="address" nullable="false" remarks="" size="80" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="date_created" nullable="false" remarks="" size="29" type="INGRESDATE"/>
+         <column autoUpdated="false" digits="0" id="4" name="last_used" nullable="false" remarks="" size="29" type="INGRESDATE"/>
+      </table>
+      <table name="itv_camp_univ" numRows="255358" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="camp_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="spot_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="demo_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="year_month" nullable="false" remarks="" size="20" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="camp_sare_universe" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="5" name="universe" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="6" name="network_universe" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="7" name="cpt" nullable="true" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="8" name="adults_cpt" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="9" name="adults_universe" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="10" name="target_effi" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="11" name="min_value" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="12" name="max_value" nullable="false" remarks="" size="7" type="FLOAT"/>
+      </table>
+      <table name="itv_demo" numRows="19" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="demo_abbreviation" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="sequence_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="demo_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="demo_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="warehouse_name" nullable="false" remarks="" size="6" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="demo_group_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="6" name="echo_code" nullable="false" remarks="" size="12" type="CHAR"/>
+      </table>
+      <table name="itv_demo_ctrl" numRows="5320" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="demo_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="include_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+      </table>
+      <table name="itv_eddi_addr" numRows="151" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="buyr_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="address_type" nullable="false" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="address" nullable="false" remarks="" size="80" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="description" nullable="true" remarks="" size="100" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="default_ind" nullable="true" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="revision" nullable="true" remarks="" size="4" type="INTEGER"/>
+      </table>
+      <table name="itv_eddi_camp" numRows="336341" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="request_id" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="camp_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="advt_short_name" nullable="false" remarks="" size="20" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="prod_short_name" nullable="false" remarks="" size="20" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="buyer_contact" nullable="false" remarks="" size="20" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="6" name="stt_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="7" name="end_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="8" name="demo_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="9" name="spot_count" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="10" name="approval_no" nullable="true" remarks="" size="11" type="INTEGER"/>
+         <index name="itv_eddi_camp_index_camp" unique="false">
+            <column ascending="true" name="camp_no"/>
+         </index>
+      </table>
+      <table name="itv_eddi_requ" numRows="11402" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="request_id" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="kronos_user" nullable="false" remarks="" size="12" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="request_date_time" nullable="false" remarks="" size="29" type="INGRESDATE"/>
+         <column autoUpdated="false" digits="0" id="3" name="extract_date_time" nullable="true" remarks="" size="29" type="INGRESDATE"/>
+         <column autoUpdated="false" digits="0" id="4" name="send_date_time" nullable="true" remarks="" size="29" type="INGRESDATE"/>
+         <column autoUpdated="false" digits="0" id="5" name="receive_date_time" nullable="true" remarks="" size="29" type="INGRESDATE"/>
+         <column autoUpdated="false" digits="0" id="6" name="status" nullable="false" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="7" name="buyr_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="buyr_name" nullable="false" remarks="" size="20" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="include_ratings" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="all_spots" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="stt_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="12" name="end_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="13" name="address_type" nullable="false" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="14" name="address" nullable="false" remarks="" size="80" type="VARCHAR"/>
+         <index name="itv_eddi_requ_index_stat" unique="false">
+            <column ascending="true" name="status"/>
+         </index>
+         <index name="itv_eddi_requ_index_user" unique="false">
+            <column ascending="true" name="kronos_user"/>
+            <column ascending="true" name="request_date_time"/>
+         </index>
+      </table>
+      <table name="itv_eddi_spot" numRows="6406997" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="request_id" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="camp_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="brek_sched_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="txmd_time" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="prog_name" nullable="false" remarks="" size="30" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="posn_in_prog" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="next_prog_name" nullable="false" remarks="" size="30" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="spot_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="8" name="post_sales_disc_price" nullable="false" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="9" name="sslg_length" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="10" name="price_factor" nullable="false" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="11" name="rtg_type_ind" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="tvr" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="13" name="impacts" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="14" name="camp_tvr" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="15" name="status" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="spot_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="17" name="clock_number" nullable="false" remarks="" size="15" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="bkpo_posn_reqm" nullable="true" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="19" name="mpart_spot_ind" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="opt_out_yn" nullable="true" remarks="" size="1" type="CHAR"/>
+      </table>
+      <table name="itv_mail_asgn" numRows="1" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="mbox_posn_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="pers_posn_code" nullable="false" remarks="" size="6" type="CHAR"/>
+      </table>
+      <table name="itv_mail_mger" numRows="648" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="orgr_code" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="posn_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="2" name="mailbox" nullable="false" remarks="" size="6" type="CHAR"/>
+      </table>
+      <table name="itv_role_sare" numRows="3007" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="role_group" nullable="false" remarks="" size="60" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="guid" nullable="false" remarks="" size="36" type="VARCHAR"/>
+      </table>
+      <table name="itv_sare" numRows="64" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="code" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="parent_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="mast_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="coverage" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="5" name="name" nullable="false" remarks="" size="30" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="rating_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="7" name="rating_factor" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="8" name="sequence_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="9" name="maj_sell_area" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="sales_db" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="11" name="spot_sare_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="mast_sare_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="13" name="dom_tx_sub_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="14" name="treg_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="15" name="sdmas_sare_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="tvr_decimal_places" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="17" name="opt_out_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="opt_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="19" name="operational_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="20" name="sold_area_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="21" name="minutage_rules" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="22" name="dflt_sptt_code" nullable="false" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="23" name="genersys_area_code" nullable="false" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="24" name="nominations_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="25" name="live_date" nullable="true" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="26" name="brek_bcst_sare_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="27" name="inv_plan_sare_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="28" name="interactive_sare_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="29" name="channel_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="30" name="includes_gmtv_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="31" name="net_coverage" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="32" name="in_landmark_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="33" name="lfgr_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="34" name="rsup_code" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="35" name="invoice_group_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="36" name="invoice_group_name" nullable="false" remarks="" size="10" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="37" name="eddie_sales_house" nullable="false" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="38" name="eddie_station_code" nullable="false" remarks="" size="5" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="39" name="eddie_sti" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="40" name="eddie_opt_out_sti" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="41" name="eddie_platform_ind" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="42" name="eddie_currency" nullable="false" remarks="" size="40" type="VARCHAR"/>
+      </table>
+      <table name="itv_spib" numRows="3495494" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="camp_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="spot_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="brek_sched_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="brek_nom_time" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="5" name="actl_posn_in_brek" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <index name="itv_spib_index_camp" unique="false">
+            <column ascending="true" name="camp_no"/>
+            <column ascending="true" name="spot_no"/>
+         </index>
+      </table>
+      <table name="itv_univ_cptm" numRows="611753" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="multi_cpt_type" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="cptt_short_name" nullable="false" remarks="" size="4" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="year_month" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="demo_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="5" name="universe" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="6" name="cpt" nullable="false" remarks="" size="11" type="INTEGER"/>
+      </table>
+      <table name="itv_univ_cpts" numRows="102946" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="year_month" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="demo_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="universe" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="cpt" nullable="true" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="5" name="adults_universe" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="6" name="adults_cpt" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="7" name="target_effi" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="8" name="min_value" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="9" name="max_value" nullable="false" remarks="" size="7" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="10" name="include_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+      </table>
+      <table name="itv_znno" numRows="2" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="znno_code" nullable="false" remarks="" size="4" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="1" name="next_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="take_up_space" nullable="true" remarks="" size="1000" type="CHAR"/>
+      </table>
+      <table name="ldw_chic_brek" numRows="0" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="brek_sched_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="brek_nom_time" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="break_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="duration" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="posn_in_prog" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="from_sare_no" nullable="false" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="6" name="from_break_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="7" name="opt_out_type" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="8" name="scch_id" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="9" name="action_reqd" nullable="false" remarks="" size="1" type="CHAR"/>
+      </table>
+      <table name="ldw_chic_prgt" numRows="0" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="treg_no" nullable="false" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="prgt_txmn_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="prgt_sched_stt_time" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="prog_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="sched_end_time" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="5" name="scch_id" nullable="false" remarks="" size="11" type="INTEGER"/>
+      </table>
+      <table name="ldw_chic_scch" numRows="0" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="scch_id" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="brek_sched_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="request_timestamp" nullable="false" remarks="" size="29" type="INGRESDATE"/>
+         <column autoUpdated="false" digits="0" id="3" name="req_status_code" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="status_timestamp" nullable="false" remarks="" size="29" type="INGRESDATE"/>
+         <column autoUpdated="false" digits="0" id="5" name="user_name" nullable="false" remarks="" size="30" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="request_type" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="error_message" nullable="false" remarks="" size="80" type="VARCHAR"/>
+      </table>
+      <table name="ldw_link_camp" numRows="341774" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="link_group_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="camp_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="camp_link_type" nullable="false" remarks="" size="1" type="CHAR"/>
+         <index name="ldw_link_camp_index_group" unique="false">
+            <column ascending="true" name="link_group_no"/>
+            <column ascending="true" name="camp_no"/>
+            <column ascending="true" name="camp_link_type"/>
+         </index>
+      </table>
+      <table name="ldw_link_group" numRows="135893" remarks="" schema="itvdata" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="link_group_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="sare_no" nullable="false" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="buyr_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="advt_code" nullable="false" remarks="" size="6" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="4" name="short_name" nullable="false" remarks="" size="20" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="name" nullable="false" remarks="" size="50" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="6" name="daypart_option" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="period_option" nullable="false" remarks="" size="1" type="CHAR"/>
+      </table>
+   </tables>
+</database>
