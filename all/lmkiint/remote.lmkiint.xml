@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="ITVDEVKR/remote" schema="lmkiint" type="INGRES - II 10.2.0 (a64.sol/100)">
+   <tables>
+      <table name="temp_6633_batch" numRows="1" remarks="" schema="lmkiint" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="rsrowid" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="result" nullable="false" remarks="" size="11" type="INTEGER"/>
+      </table>
+      <table name="temp_6634_batch" numRows="1" remarks="" schema="lmkiint" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="rsrowid" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="msgno" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="msgtext" nullable="false" remarks="" size="1024" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="overrideyn" nullable="false" remarks="" size="1" type="CHAR"/>
+      </table>
+      <table name="temp_6635_batch" numRows="0" remarks="" schema="lmkiint" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="rsrowid" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="camp_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="brek_sched_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="btyp_code" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="spot_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="6" name="spot_status" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="sslg_length" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="8" name="non_preemptible_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="crcy_code" nullable="false" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="deal_type" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="client_picked" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="bkpo_posn_reqm" nullable="true" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="13" name="discount_date" nullable="true" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="14" name="option_expiry_date" nullable="true" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="15" name="use_reserve_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="brek_nom_time" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="17" name="sptt_code" nullable="true" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="bsar_no" nullable="false" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="19" name="stt_price" nullable="true" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="20" name="psd_price" nullable="true" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="21" name="entered_price_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="pree_status" nullable="true" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="23" name="pree_tor_status" nullable="true" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="24" name="mbru_code" nullable="true" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="25" name="duration" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="26" name="open_avail" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="27" name="prog_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="28" name="prgc_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="29" name="no_of_rtgs" nullable="false" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="1" id="30" name="efficiency" nullable="false" remarks="" size="5" type="DECIMAL"/>
+         <column autoUpdated="false" digits="0" id="31" name="spot_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="32" name="line_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="33" name="opt_index" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="34" name="opt_limit" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="35" name="bstp_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="36" name="ityp_no" nullable="false" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="37" name="bcat_code" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="38" name="enhanced_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="39" name="epis_name" nullable="false" remarks="" size="50" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="40" name="prog_name" nullable="false" remarks="" size="50" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="41" name="prog_comment" nullable="false" remarks="" size="50" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="42" name="floor_rate" nullable="false" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="43" name="prog_class_code" nullable="false" remarks="" size="4" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="44" name="live_broadcast" nullable="false" remarks="" size="1" type="CHAR"/>
+      </table>
+      <table name="temp_6636_batch" numRows="1" remarks="" schema="lmkiint" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="rsrowid" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="result" nullable="false" remarks="" size="11" type="INTEGER"/>
+      </table>
+      <table name="temp_6637_batch" numRows="1" remarks="" schema="lmkiint" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="rsrowid" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="msgno" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="msgtext" nullable="false" remarks="" size="1024" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="3" name="overrideyn" nullable="false" remarks="" size="1" type="CHAR"/>
+      </table>
+      <table name="temp_6638_batch" numRows="1" remarks="" schema="lmkiint" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="rsrowid" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="1" name="camp_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="2" name="sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="3" name="brek_sched_date" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="4" name="btyp_code" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="5" name="spot_sare_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="6" name="spot_status" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="7" name="sslg_length" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="8" name="non_preemptible_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="9" name="crcy_code" nullable="false" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="10" name="deal_type" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="11" name="client_picked" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="12" name="bkpo_posn_reqm" nullable="true" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="13" name="discount_date" nullable="true" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="14" name="option_expiry_date" nullable="true" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="15" name="use_reserve_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="16" name="brek_nom_time" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="17" name="sptt_code" nullable="true" remarks="" size="3" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="18" name="bsar_no" nullable="false" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="19" name="stt_price" nullable="true" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="20" name="psd_price" nullable="true" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="21" name="entered_price_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="22" name="pree_status" nullable="true" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="23" name="pree_tor_status" nullable="true" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="24" name="mbru_code" nullable="true" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="25" name="duration" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="26" name="open_avail" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="27" name="prog_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="28" name="prgc_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="29" name="no_of_rtgs" nullable="false" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="1" id="30" name="efficiency" nullable="false" remarks="" size="5" type="DECIMAL"/>
+         <column autoUpdated="false" digits="0" id="31" name="spot_no" nullable="false" remarks="" size="11" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="32" name="line_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="33" name="opt_index" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="34" name="opt_limit" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="35" name="bstp_no" nullable="false" remarks="" size="6" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="36" name="ityp_no" nullable="false" remarks="" size="4" type="INTEGER"/>
+         <column autoUpdated="false" digits="0" id="37" name="bcat_code" nullable="false" remarks="" size="2" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="38" name="enhanced_yn" nullable="false" remarks="" size="1" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="39" name="epis_name" nullable="false" remarks="" size="50" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="40" name="prog_name" nullable="false" remarks="" size="50" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="41" name="prog_comment" nullable="false" remarks="" size="50" type="VARCHAR"/>
+         <column autoUpdated="false" digits="0" id="42" name="floor_rate" nullable="false" remarks="" size="15" type="FLOAT"/>
+         <column autoUpdated="false" digits="0" id="43" name="prog_class_code" nullable="false" remarks="" size="4" type="CHAR"/>
+         <column autoUpdated="false" digits="0" id="44" name="live_broadcast" nullable="false" remarks="" size="1" type="CHAR"/>
+      </table>
+   </tables>
+</database>
